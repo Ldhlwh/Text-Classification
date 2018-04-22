@@ -1,0 +1,35 @@
+BEST:
+eta 0.1, maxDepth 6
+Round : 2000
+AUC : 0.90286
+
+--------------------
+
+eta 0.1, maxDepth 6
+BestNum : 1004
+TestAUC : 0.901691
+RealAUC : 0.90128 (Tested, 1000 rounds, 0410-3-2)
+
+eta 0.1, maxDepth 7
+BestNum : 823
+TestAUC : 0.902132
+RealAUC : 0.89941 (Tested, 0414-2)
+
+eta 0.1, maxDepth 10
+BestNum : 516
+TestAUC : 0.902584
+RealAUC : 0.90107 (Tested, 0414-1)
+
+eta 0.1, maxDepth 15
+BestNum : 334
+TestAUC : 0.902355
+RealAUC : 0.90238 (Tested, 0414-3)
+
+eta 0.1, maxDepth 15, minChildWeight 2
+BestNum : 
+TestAUC : Abandoned
+
+0414-4
+eta 0.1, maxDepth 15, minChildWeight 2
+Round : 
+AUC :

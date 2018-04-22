@@ -1,0 +1,90 @@
+BEST: 0417-1-1
+eta 0.05, maxDepth 11, minChildWeight 2, subSample 1.0, colsampleBytree 0.8
+Round : 1753
+AUC : 0.90483
+
+-----64000 val-----
+0414-4
+eta 0.1, maxDepth 15, minChildWeight 2
+Round : 393
+Val : 0.903933
+AUC : 0.90011
+
+0414-5
+eta 0.1, maxDepth 6
+Round : 612
+Val : 0.901977
+AUC : 0.89633
+
+0414-6
+eta 0.1, maxDepth 8
+Round : 637
+Val : 0.903892
+AUC : 0.89825
+
+0414-7
+eta 0.1, maxDepth 10
+Round : 524
+Val : 0.905121
+AUC : 0.89931
+
+-----10000 val-----
+0414-7
+eta 0.1, maxDepth 10
+Round : 370
+Val : 0.901058
+AUC : 0.89994
+
+0415-1-i (i = 6 ~ 15 \ 10)
+eta 0.1, maxDepth i
+	Round	Val			AUC
+6	540		0.898555	0.89743
+7	1148	0.901005	0.90113
+8	824		0.903167	0.90075
+9	629		0.902394	0.90025
+10	370		0.901058	0.89994		(Tested Before)
+11	449		0.900583	0.90157		!!!
+12	496		0.902456	0.90127
+13	322		0.8993		0.89932
+14	417		0.901421	0.90072
+15	218		0.898715	0.90120
+
+0416-1-i (i = 2 ~ 5)
+eta 0.1, maxDepth 11, minChildWeight i
+	Round	Val			AUC
+1	449		0.900583	0.90157		(Tested Before)
+2	639		0.904143	0.90213		!!!
+3	595		0.901132	0.90175
+4	631		0.903137	0.90189
+5	451		0.902151	0.90153
+
+0416-2-i (i = 0.8, 0.85, 0.9, 0.95)
+eta 0.1, maxDepth 11, minChildWeight 2, subSample 0.i
+		Round	Val			AUC
+0.8		639		0.904143	0.90213
+0.85	639		0.904143	0.90213
+0.9		639		0.904143	0.90213
+0.95	(Abandoned)
+1.0		639		0.904143	0.90213		(Tested Before)
+The outcomes did not change. So we stick to 1.0
+
+0417-1-i (i = 0.8, 0.85, 0.9, 0.95)
+eta 0.1, maxDepth 11, minChildWeight 2, subSample 1.0, colsampleBytree i
+		Round	Val			AUC
+0.8		481		0.90167		0.90301		(Last(581): 0.90323)
+0.85	510		0.901345	0.90099
+0.9		517		0.903896	0.90102		(Last(617): 0.90154)
+0.95	427		0.900813	0.90164
+1.0		639		0.904143	0.90213		(Tested Before)
+
+0418-1
+eta 0.05, maxDepth 11, minChildWeight 2, subSample 1.0, colsampleBytree 0.8
+Round	Val			AUC
+1554	0.904603	0.90481	
+1753	0.904431	0.90483
+
+0418-2
+eta 0.01, other parameters remain unchanged
+Round	Val			AUC
+11358	0.906664	0.90516
+11458	0.906556	0.90500
